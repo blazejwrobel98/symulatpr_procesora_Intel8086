@@ -1,0 +1,114 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Symulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="center">
+        <table class="middle">
+            <tr>
+                <td></td>
+                <td colspan="5">Symulator Intel 8086</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">Tablica Rejestrów</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>AX</td>
+                <td>AH</td>
+                <td colspan="2"><input id="ah" type="text" value="1111"/></td>
+                <td>AL</td>
+                <td colspan="2"><input id="al" type="text" value="1111"/></td>
+            </tr>
+            <tr>
+                <td>BX</td>
+                <td>BH</td>
+                <td colspan="2"><input id="bh" type="text" value="2222"/></td>
+                <td>BL</td>
+                <td colspan="2"><input id="bl" type="text" value="1111"/></td>
+            </tr>
+            <tr>
+                <td>CX</td>
+                <td>CH</td>
+                <td colspan="2"><input id="ch" type="text" value="3333"/></td>
+                <td>CL</td>
+                <td colspan="2"><input id="cl" type="text" value="1111"/></td>
+            </tr>
+            <tr>
+                <td>DX</td>
+                <td>DH</td>
+                <td colspan="2"><input id="dh" type="text" value="4444"/></td>
+                <td>DL</td>
+                <td colspan="2"><input id="dl" type="text" value="1111"/></td>
+            </tr>
+            <tr>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">Rozkazy</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Z</td>
+                <td colspan="2">
+                    <select name="z" id="z">
+                        <option value="ah">AH</option>
+                        <option value="al">AL</option>
+                        <option value="bh">BH</option>
+                        <option value="bl">BL</option>
+                        <option value="ch">CH</option>
+                        <option value="cl">CL</option>
+                        <option value="dh">DH</option>
+                        <option value="dl">DL</option>
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DO</td>
+                <td colspan="2">
+                    <select name="do" id="do">
+                        <option value="ah">AH</option>
+                        <option value="al" selected>AL</option>
+                        <option value="bh">BH</option>
+                        <option value="bl">BL</option>
+                        <option value="ch">CH</option>
+                        <option value="cl">CL</option>
+                        <option value="dh">DH</option>
+                        <option value="dl">DL</option>
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="MOV" onclick="MOV();"/></td>
+                <td></td>
+                <td><input type="button" value="XCHG" onclick="XCHG();"/></td>
+                <td></td>
+                <td><input type="button" value="CLEAR" onclick="CLEAR();"/></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
